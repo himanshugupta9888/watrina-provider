@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="paymentmodel"
+            type="com.gox.partner.interfaces.CustomClickListener" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_payment_mode"
+            style="@style/SmallText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:onClick="@{() -> paymentmodel.onListClickListener()}"
+            android:padding="@dimen/_10sdp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            tools:text="SHHHS" />
+    </androidx.cardview.widget.CardView>
+
+</layout>

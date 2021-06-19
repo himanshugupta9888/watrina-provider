@@ -1,0 +1,59 @@
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/gox/xuberservice/DataBindingTriggerClass.java
+ com.gox.xuberservice.DataBindingTriggerClass
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/gox/xuberservice/BR.java
+ com.gox.xuberservice.BR
+com/gox/base/BR.java
+ com.gox.base.BR
+com/gox/xuberservice/BuildConfig.java
+ com.gox.xuberservice.BuildConfig
+com/gox/xuberservice/generated/callback/OnClickListener.java
+ com.gox.xuberservice.generated.callback.OnClickListener
+ com.gox.xuberservice.generated.callback.OnClickListener$Listener
+com/gox/xuberservice/databinding/DialogInvoiceBindingImpl.java
+ com.gox.xuberservice.databinding.DialogInvoiceBindingImpl
+ com.gox.xuberservice.databinding.DialogInvoiceBindingImpl$1
+com/gox/xuberservice/databinding/DialogXuperExtraChargeBindingImpl.java
+ com.gox.xuberservice.databinding.DialogXuperExtraChargeBindingImpl
+ com.gox.xuberservice.databinding.DialogXuperExtraChargeBindingImpl$1
+ com.gox.xuberservice.databinding.DialogXuperExtraChargeBindingImpl$2
+com/gox/xuberservice/databinding/DialogInvoiceBinding.java
+ com.gox.xuberservice.databinding.DialogInvoiceBinding
+com/gox/xuberservice/databinding/ItemXuberReasonBinding.java
+ com.gox.xuberservice.databinding.ItemXuberReasonBinding
+com/gox/xuberservice/databinding/DialogXuperRatingBinding.java
+ com.gox.xuberservice.databinding.DialogXuperRatingBinding
+com/gox/xuberservice/databinding/DialogReasonBindingImpl.java
+ com.gox.xuberservice.databinding.DialogReasonBindingImpl
+com/gox/xuberservice/databinding/DialogXuperRatingBindingImpl.java
+ com.gox.xuberservice.databinding.DialogXuperRatingBindingImpl
+ com.gox.xuberservice.databinding.DialogXuperRatingBindingImpl$1
+com/gox/xuberservice/databinding/DialogXuperExtraChargeBinding.java
+ com.gox.xuberservice.databinding.DialogXuperExtraChargeBinding
+com/gox/xuberservice/DataBinderMapperImpl.java
+ com.gox.xuberservice.DataBinderMapperImpl
+ com.gox.xuberservice.DataBinderMapperImpl$InnerBrLookup
+ com.gox.xuberservice.DataBinderMapperImpl$InnerLayoutIdLookup
+com/gox/xuberservice/databinding/ItemXuberReasonBindingImpl.java
+ com.gox.xuberservice.databinding.ItemXuberReasonBindingImpl
+com/gox/xuberservice/databinding/DialogUploadImageBinding.java
+ com.gox.xuberservice.databinding.DialogUploadImageBinding
+com/gox/xuberservice/databinding/BottomServiceStatusSheetBinding.java
+ com.gox.xuberservice.databinding.BottomServiceStatusSheetBinding
+com/gox/xuberservice/databinding/DialogReasonBinding.java
+ com.gox.xuberservice.databinding.DialogReasonBinding
+com/gox/xuberservice/databinding/BottomServiceStatusSheetBindingImpl.java
+ com.gox.xuberservice.databinding.BottomServiceStatusSheetBindingImpl
+ com.gox.xuberservice.databinding.BottomServiceStatusSheetBindingImpl$1
+ com.gox.xuberservice.databinding.BottomServiceStatusSheetBindingImpl$2
+ com.gox.xuberservice.databinding.BottomServiceStatusSheetBindingImpl$3
+ com.gox.xuberservice.databinding.BottomServiceStatusSheetBindingImpl$4
+com/gox/xuberservice/databinding/ActivityXuberMainBinding.java
+ com.gox.xuberservice.databinding.ActivityXuberMainBinding
+com/gox/xuberservice/databinding/ActivityXuberMainBindingImpl.java
+ com.gox.xuberservice.databinding.ActivityXuberMainBindingImpl
+com/gox/xuberservice/databinding/DialogUploadImageBindingImpl.java
+ com.gox.xuberservice.databinding.DialogUploadImageBindingImpl

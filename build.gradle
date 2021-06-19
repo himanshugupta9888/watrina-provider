@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        PUBLISH_GROUP_ID = 'com.theartofdev.edmodo'
+        PUBLISH_ARTIFACT_ID = 'android-image-cropper'
+        PUBLISH_VERSION = '2.8.0'
+    }
+    repositories {
+        google()
+        jcenter()
+        maven {  url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.google.gms:google-services:4.3.0'
+        classpath 'io.fabric.tools:gradle:1.29.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

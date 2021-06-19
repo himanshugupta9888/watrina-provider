@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appoets-watrina_android_provider-02fbc09baee2.iml" filepath="$PROJECT_DIR$/.idea/modules/appoets-watrina_android_provider-02fbc09baee2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/appoets-watrina_android_provider-02fbc09baee2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/appoets-watrina_android_provider-02fbc09baee2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/appoets-watrina_android_provider-02fbc09baee2.base.iml" filepath="$PROJECT_DIR$/.idea/modules/base/appoets-watrina_android_provider-02fbc09baee2.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrycodepicker/appoets-watrina_android_provider-02fbc09baee2.countrycodepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/countrycodepicker/appoets-watrina_android_provider-02fbc09baee2.countrycodepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cropperlibrary/appoets-watrina_android_provider-02fbc09baee2.cropperlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/cropperlibrary/appoets-watrina_android_provider-02fbc09baee2.cropperlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/foodservice/appoets-watrina_android_provider-02fbc09baee2.foodservice.iml" filepath="$PROJECT_DIR$/.idea/modules/foodservice/appoets-watrina_android_provider-02fbc09baee2.foodservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/monitorinternet/appoets-watrina_android_provider-02fbc09baee2.monitorinternet.iml" filepath="$PROJECT_DIR$/.idea/modules/monitorinternet/appoets-watrina_android_provider-02fbc09baee2.monitorinternet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taxiservice/appoets-watrina_android_provider-02fbc09baee2.taxiservice.iml" filepath="$PROJECT_DIR$/.idea/modules/taxiservice/appoets-watrina_android_provider-02fbc09baee2.taxiservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xuberservice/appoets-watrina_android_provider-02fbc09baee2.xuberservice.iml" filepath="$PROJECT_DIR$/.idea/modules/xuberservice/appoets-watrina_android_provider-02fbc09baee2.xuberservice.iml" />
+    </modules>
+  </component>
+</project>

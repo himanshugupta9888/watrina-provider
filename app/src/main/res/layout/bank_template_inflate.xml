@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.InputType" />
+
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+
+        <variable
+            name="bankViewModel"
+            type="com.gox.partner.views.manage_bank_details.ManageBankDetailsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLabelName"
+            style="@style/SmallText.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_normal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@{bankViewModel.getBankLabelName(position)}"
+            android:textColor="@color/black"
+            tools:text="Bank Name" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:descendantFocusability="beforeDescendants"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etLabelValue"
+                style="@style/VerySmallText.Black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:afterTextChanged="@{(edtitable)->bankViewModel.afterValueChanged(edtitable,position)}"
+                android:background="@null"
+                android:fontFamily="@font/font_normal"
+                android:inputType="@{bankViewModel.getInputTypeIsNumber(position)?InputType.TYPE_CLASS_NUMBER:InputType.TYPE_CLASS_TEXT}"
+                android:padding="15dp"
+                android:text="@{bankViewModel.getBankLabelValue(position)}"
+                tools:text="HDFC Bank Ltd" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</layout>

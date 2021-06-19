@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pendinglistModel"
+            type="com.gox.partner.views.pendinglist.PendingListViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_doc_pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_round_corner_rectangle"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/MediumText.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/please_complete_below_steps" />
+
+            <View
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="0.6dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_add_service"
+                style="@style/SmallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/bg_transaprent_rounded_corner_rect"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:drawableTint="@color/colorGray"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:onClick="@{(v) -> pendinglistModel.selectedPendingList(v)}"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/add_services"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                tools:targetApi="m" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddProfile"
+                style="@style/SmallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/bg_transaprent_rounded_corner_rect"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:drawableTint="@color/colorGray"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:onClick="@{(v) -> pendinglistModel.selectedPendingList(v)}"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/update_profile"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                tools:targetApi="m" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_add_document"
+                style="@style/SmallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/bg_transaprent_rounded_corner_rect"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:drawableTint="@color/grey"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:onClick="@{(v) -> pendinglistModel.selectedPendingList(v)}"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/add_document"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                tools:targetApi="m" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bank_details"
+                style="@style/SmallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/bg_transaprent_rounded_corner_rect"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:onClick="@{(v) -> pendinglistModel.selectedPendingList(v)}"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/add_bank_detail"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_waiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/waiting_for_approval" />
+
+            <TextView
+                android:id="@+id/tv_waiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="@string/waiting_for_approval"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_low_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_35sdp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="@string/alert"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <View
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tv_low_bal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:gravity="center"
+                android:text="@string/low_balance"
+                android:textColor="#acacac"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_call_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:onClick="@{(v) -> pendinglistModel.selectedPendingList(v)}"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/open_wallet"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

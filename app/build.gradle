@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 30
+    //Test
+    signingConfigs {
+        release {
+            keyAlias 'watirna_android_provider'
+            keyPassword 'watirna_android_provider'
+            storeFile file('jks/watirna_android_provider.jks')
+            storePassword 'watirna_android_provider'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.watirna.partner"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    buildTypes {
+
+        debug {
+            manifestPlaceholders = [crashlyticsEnabled: true]
+        }
+
+        release {
+            manifestPlaceholders = [crashlyticsEnabled: true]
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.31'
+    implementation 'com.google.android.material:material:1.3.0'
+    kapt 'com.android.databinding:compiler:3.1.4'
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-alpha02'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    //      Basic design support library
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //      android dimen support
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    /*      Glide       */
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    /*      square image        */
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+
+    //      ViewPager Animation
+    implementation 'com.novoda:spritz:1.0.0'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+
+    //      Facebook Account Kit
+    implementation 'com.facebook.android:account-kit-sdk:5.0.0'
+
+    //      Facebook Login
+    implementation 'com.facebook.android:facebook-login:5.1.1'
+
+    //      Added dependent library modules into the Android app module.
+    implementation 'com.github.recruit-lifestyle:FloatingView:2.4.4'
+
+    implementation "org.permissionsdispatcher:permissionsdispatcher:4.3.0"
+    kapt "org.permissionsdispatcher:permissionsdispatcher-processor:4.3.0"
+
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+    implementation 'com.github.jkwiecien:EasyImage:2.0.4'
+
+    //Scanner
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+
+    // Ios type dialog
+    api 'com.github.shaoshuai904:iOS_Style_Dialog:1.2.3'
+
+    implementation project(':base')
+    implementation project(':foodservice')
+    implementation project(':taxiservice')
+    implementation project(':xuberservice')
+    implementation project(':countrycodepicker')
+  //  implementation project(':cropperlibrary')
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

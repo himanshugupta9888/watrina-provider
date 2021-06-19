@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="itemClickListener"
+            type="com.gox.partner.interfaces.CustomClickListener" />
+
+    </data>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/filterservice_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_service_unselected"
+        android:elevation="4dp"
+        android:fontFamily="@font/font_normal"
+        android:gravity="center"
+        android:onClick="@{()->itemClickListener.onListClickListener()}"
+        android:paddingStart="3dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="8dp"
+        android:text="@string/transport"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+
+</layout>

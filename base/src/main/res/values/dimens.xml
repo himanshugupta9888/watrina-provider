@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boxCornerRadius">22dp</dimen>
+    <dimen name="et_textsize">12sp</dimen>
+    <dimen name="flag_height">15dp</dimen>
+    <dimen name="flag_width">15dp</dimen>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="verifyFileModel"
+            type="com.gox.partner.views.verifyfile.VerifyFileViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tbr_verification"
+            layout="@layout/toolbar_header" />
+
+
+        <include
+            layout="@layout/layout_upload_adhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tbr_verification"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_verfiy_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_blue_rounded_corner"
+            android:fontFamily="@font/font_normal"
+            android:gravity="center"
+            android:onClick="@{() -> verifyFileModel.showDashboardPage()}"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/btn_doc_txt"
+            android:textColor="@color/xuber_white"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+</layout>
+

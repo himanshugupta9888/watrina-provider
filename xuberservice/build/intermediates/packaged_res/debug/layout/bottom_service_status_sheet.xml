@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+                                                       
+                                                   
+
+    
+
+                 
+                                     
+                                                                                    
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" android:tag="layout/bottom_service_status_sheet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:id="@+id/rl_camera"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <LinearLayout
+                android:id="@+id/ll_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_timer"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/start_timer">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/xuber_white"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_timer" />
+
+                <Chronometer
+                    android:id="@+id/cmXuberServiceTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:textColor="@color/xuber_white"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:backgroundTint="@color/colorBasePrimary"
+                app:elevation="@dimen/_8sdp"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/camera"
+                app:tint="@android:color/white" />
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/fab_xuber_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:padding="5dp"
+                app:menu_colorNormal="@color/colorBasePrimary"
+                app:menu_colorPressed="@color/colorBasePrimary"
+                app:menu_colorRipple="@color/colorBasePrimary"
+                app:menu_fab_size="mini"
+                app:menu_icon="@drawable/ic_more_chat_call_xuber"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab_xuber_menu_call"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_call"
+                    app:fab_colorNormal="@color/colorBasePrimary"
+                    app:fab_colorPressed="@color/colorBasePrimary"
+                    app:fab_colorRipple="@color/colorBasePrimary"
+                    app:fab_label=""
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab_xuber_menu_chat"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_chat_bubble"
+                    app:fab_colorNormal="@color/colorBasePrimary"
+                    app:fab_colorPressed="@color/colorBasePrimary"
+                    app:fab_colorRipple="@color/colorBasePrimary"
+                    app:fab_label=""
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab_xuber_menu_video"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_video_call"
+                    android:visibility="gone"
+                    app:fab_colorNormal="@color/black"
+                    app:fab_colorPressed="@color/black"
+                    app:fab_colorRipple="@color/black"
+                    app:fab_label=""
+                    app:fab_size="mini" />
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_camera"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/xuber_white"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/ivXuperUSer"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_marginStart="@dimen/_11sdp"
+                    android:contentDescription="@string/app_name" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toEndOf="@+id/ivXuperUSer"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_xuper_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:tag="binding_1"                       
+                        android:textColor="@color/xuber_black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvXuperRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirltstd_medium"
+                            android:tag="binding_2"                         
+                            android:textColor="@color/xuber_grey"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivXuperRate"
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/star"
+                            android:tint="@color/chip_yellow_inner_color" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_servie_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_label_servcie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:gravity="start"
+                        android:text="@string/label_service"
+                        android:textColor="@color/xuber_black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_service_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:tag="binding_3"                          
+                        android:textColor="@color/notification_grey"
+                        tools:text="sssss"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_instruction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_instruction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirltstd_medium"
+                            android:text="@string/label_instruction"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageButton
+                            android:id="@+id/ib_instruction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/circle_light_blue"
+                            android:contentDescription="@string/app_name"
+                            android:tag="binding_4"                                         
+                            android:padding="@dimen/_2sdp"
+                            android:src="@drawable/ic_info" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_servie_type"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtXuperOtp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/bg_otp_edittext"
+                        android:gravity="center"
+                        style="@style/MediumText"
+                        android:hint="@string/enter_otp_here"
+                        android:inputType="phone"
+                        android:padding="@dimen/_8sdp"
+                        android:tag="binding_5"                  
+                        android:textColor="@color/xuber_black"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/llConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/bg_service_confirm"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAllow"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            style="@style/SmallText"
+                            android:gravity="center"
+                            android:tag="binding_6"                                      
+                            android:padding="5dp"
+                            android:text="@string/label_arrived"
+                            android:textAllCaps="false"
+                            android:textColor="@color/xuper_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <View
+                            android:layout_width="0.8dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/xuber_grey"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tvCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            style="@style/SmallText"
+                            android:tag="binding_7"                                      
+                            android:padding="5dp"
+                            android:text="@string/label_cancel"
+                            android:textAllCaps="false"
+                            android:textColor="@color/xuper_blue"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+         

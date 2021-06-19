@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="action_allow" tools:ignore="MissingTranslation">Allow</string>
+    <string name="action_deny" tools:ignore="MissingTranslation">Deny</string>
+    <string name="xjek_delete_account" tools:ignore="MissingTranslation">Delete Account</string>
+    <string name="xjek_logout_account" tools:ignore="MissingTranslation">Logout Account</string>
+    <string name="fetching_loading" tools:ignore="MissingTranslation">Please wait, while finding your location</string>
+    <string name="missing_permission" tools:ignore="MissingTranslation">Please Enable Necessary permission to proceed the applcation</string>
+    <string name="ok" tools:ignore="MissingTranslation">OK</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="status" tools:ignore="MissingTranslation">Status</string>
+    <string name="floating_app" tools:ignore="MissingTranslation">Tracking Location</string>
+    <string name="low_battery" tools:ignore="MissingTranslation">Your battery is low</string>
+    <string name="chat" tools:ignore="MissingTranslation">Chat</string>
+    <string name="placeholder_string" translatable="false">xXx xXx xXx</string>
+    <string name="location_permissing_missing" tools:ignore="MissingTranslation">Location permission missing…</string>
+
+    <!--Map Error Strings-->
+    <string name="NoRoadMapAvailable" tools:ignore="MissingTranslation">No road map available…</string>
+    <string name="WayPointLlimitExceeded" tools:ignore="MissingTranslation">Way point limit exceeded…</string>
+    <string name="RoadMapLimitExceeded" tools:ignore="MissingTranslation">Road map limit exceeded…</string>
+    <string name="InvalidInputs" tools:ignore="MissingTranslation">Invalid inputs…</string>
+    <string name="MayBeInvalidAPIBillingPendingMethodDeprecated" tools:ignore="MissingTranslation">MayBe invalid API/Billing pending/Method Deprecated…</string>
+    <string name="TooManyRequestlimitExceeded" tools:ignore="MissingTranslation">Too many request, limit exceeded…</string>
+    <string name="DirectionsServiceNotEnabled" tools:ignore="MissingTranslation">Directions service not enabled…</string>
+    <string name="ServerError" tools:ignore="MissingTranslation">Server Error…</string>
+    <string name="discount">Discount</string>
+    <string name="no_internet_connection">No Internet Connection!!</string>
+    <string name="check_your_internet_connection_and_try_again">Check your internet connection and try again!.</string>
+
+    <string name="send_amount">Send amount</string>
+    <string name="receive_amount">Receive amount</string>
+    <string name="peak_charge">Peak Charge</string>
+<!--    <string name="app_name" translatable="false">Watirna Au Provider</string>-->
+
+    <string name="send_amount_to">Send Amount to</string>
+    <string name="no_userfound_no">No user Found with this Number</string>
+    <string name="empty_amount">Please Enter the Amount</string>
+    <string name="amount">Amount</string>
+    <string name="send">Send</string>
+
+</resources>
