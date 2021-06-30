@@ -373,6 +373,285 @@
 
                 </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
+                <LinearLayout
+                    android:id="@+id/document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                   android:layout_margin="4dp"
+                    app:cornerRadius="@dimen/_25sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rl_rc_book">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginStart="4dp"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onRcBookClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Full NSW drivers licence"
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleRcBook}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onInsuranceClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Driving record "
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleInsurance}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginStart="4dp"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onRcBookClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Identification photo"
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleRcBook}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onInsuranceClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Identity proof"
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleInsurance}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onRcBookClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Police check "
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleRcBook}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onInsuranceClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="VEVO visa confirmation for non-citizens"
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleInsurance}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginStart="4dp"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onRcBookClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Vehicle Insurance"
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleRcBook}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+                        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/drawable_dashed_rectangle"
+                            android:onClick="@{addVehicleViewModel::onInsuranceClick}">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_file_upload"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:text="Vehicle Inspection Report"
+                                android:textColor="@color/colorLightBlue"
+                                android:textSize="12sp"
+                                app:drawableTint="@color/colorLightBlue" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                app:setImageResource="@{addVehicleViewModel.vehicleData.vehicleInsurance}" />
+
+                        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tbr_vehicle_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Vehicle [Not more than 10 Years Old]"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/document" />
+
+
+
                 <androidx.appcompat.widget.AppCompatButton
                     style="@style/SmallText"
                     android:layout_width="0dp"
@@ -391,7 +670,7 @@
                     app:cornerRadius="@dimen/_25sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/rl_rc_book" />
+                    app:layout_constraintTop_toBottomOf="@id/tbr_vehicle_time" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
